@@ -7,17 +7,76 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .bg-graph-paper {
+    background-color: #1a1a1a; /* Dark background color */
+    background-image: 
+      linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px), /* Vertical lines */
+      linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px); /* Horizontal lines */
+    background-size: 30px 30px;
   }
+}
+
+html {
+  font-family: 'Fira Code', monospace; /* Set global font */
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(29, 26, 26);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Content {
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  position: relative;
+}
+
+.Box {
+  width: 80%; 
+  height: 80vh; 
+  background: linear-gradient(135deg, #000000, #4b2e2e); 
+  position: fixed;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  overflow: hidden;
+}
+
+
+
+.Footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.5rem;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 @layer utilities {
