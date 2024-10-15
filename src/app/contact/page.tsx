@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Contact = () => {
@@ -14,9 +15,36 @@ const Contact = () => {
             <strong>Email:</strong> <a href="mailto:adarshharindran112@gmail.com" className="underline hover:text-blue-400">adarshharindran112@gmail.com</a>
           </p>
           <p className="text-lg md:text-2x2 flex">
-            <a href='https://www.linkedin.com/in/adarsh-pv-070696215/'><img className='w-9' src="https://static-00.iconduck.com/assets.00/linkedin-icon-256x256-tl5ixqg3.png"/></a>
-            <a href='https://github.com/adarsh-pv'><img className='w-10 ml-2' src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/></a> 
-            <a href='https://medium.com/@adarshharindran'><img className='w-12 ml-2' src="https://logowik.com/content/uploads/images/medium4864.jpg"/></a> 
+            {/* LinkedIn icon */}
+            <a href='https://www.linkedin.com/in/adarsh-pv-070696215/'>
+              <Image 
+                className='w-10' 
+                src="/Images/linkedin-icon.png" 
+                width={30} 
+                height={30} 
+                alt="LinkedIn"
+              />
+            </a>
+            {/* GitHub icon */}
+            <a href='https://github.com/adarsh-pv'>
+              <Image 
+                className='w-12 ml-2' 
+                src="/Images/github-icon.ico" 
+                width={40} 
+                height={40} 
+                alt="GitHub"
+              />
+            </a>
+            {/* Medium icon */}
+            <a href='https://medium.com/@adarshharindran'>
+              <Image 
+                className='w-11 ml-2' 
+                src="/Images/medium-icon.webp" 
+                width={40} 
+                height={40} 
+                alt="Medium"
+              />
+            </a> 
           </p>
           <p className="text-lg md:text-2x2">
             <strong>Phone:</strong> <a href="tel:+917025651710" className="underline hover:text-blue-400">+91 70256 51710</a>

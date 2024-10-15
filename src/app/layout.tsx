@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import "./globals.css";
 import { Fira_Code } from 'next/font/google'
 const fira_code = Fira_Code({
@@ -6,7 +7,10 @@ const fira_code = Fira_Code({
   display: 'swap', 
   variable: '--font-fira-code', 
 });
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+export default function RootLayout({ children}:RootLayoutProps ) {
   return (
     <html lang="en" className={fira_code.variable}>
       <body>
