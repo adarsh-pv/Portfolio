@@ -12,7 +12,7 @@ const Contact = () => {
         </p>
         <div className="space-y-4">
           <p className="text-lg md:text-2x2">
-            <strong>Email:</strong> <a href="mailto:adarshharindran112@gmail.com" className="underline hover:text-blue-400">adarshharindran112@gmail.com</a>
+            <strong className='sm:text-sm'>Email:</strong> <a href="mailto:adarshharindran112@gmail.com" className="underline hover:text-blue-400 sm:text-sm">adarshharindran112@gmail.com</a>
           </p>
           <p className="text-lg md:text-2x2 flex lg:justify-start">
             {/* LinkedIn icon */}
@@ -47,7 +47,7 @@ const Contact = () => {
             </a> 
           </p>
           <p className="text-lg md:text-2x2">
-            <strong>Phone:</strong> <a href="tel:+917025651710" className="underline hover:text-blue-400">+91 70256 51710</a>
+            <strong className='sm:text-sm'>Phone:</strong> <a href="tel:+917025651710" className="underline hover:text-blue-400 sm:text-sm">+91 70256 51710</a>
           </p>
         </div>
         <p className="mt-8 text-sm md:text-lg">Looking forward to hearing from you! 🚀</p>
