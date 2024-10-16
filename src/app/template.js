@@ -13,7 +13,7 @@ const Template = ({ children }) => {
       <div className="p-8 text-white">
       </div>
     </div>
-      <motion.div drag dragConstraints={constraintsRef} className="Box">
+      <motion.div drag dragConstraints={constraintsRef} className="Box px-2 md:px-8">
       <div className="Content">
         {children}
 </div>
