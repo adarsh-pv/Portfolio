@@ -3,8 +3,8 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen text-start">
-      <div className="max-w-full w-full lg:mb-48 md:mb-52 sm:mb-40 mb-32"> {/* Added max-width and w-full for responsiveness */}
+    <div className="flex flex-col justify-center items-center min-h-screen text-start lg:text-center lg:px-44">
+      <div className="w-full lg:mb-48 md:mb-52 sm:mb-40 mb-32"> {/* Added max-width and w-full for responsiveness */}
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Let’s Get in Touch</h1>
         <p className="text-sm md:text-lg">
           Have an exciting project or just want to chat? I’m always open to new ideas and collaborations.
@@ -14,7 +14,7 @@ const Contact = () => {
           <p className="text-lg md:text-2x2">
             <strong>Email:</strong> <a href="mailto:adarshharindran112@gmail.com" className="underline hover:text-blue-400">adarshharindran112@gmail.com</a>
           </p>
-          <p className="text-lg md:text-2x2 flex">
+          <p className="text-lg md:text-2x2 flex lg:justify-center">
             {/* LinkedIn icon */}
             <a href='https://www.linkedin.com/in/adarsh-pv-070696215/'>
               <Image 
