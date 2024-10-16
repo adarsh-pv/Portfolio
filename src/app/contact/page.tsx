@@ -19,7 +19,7 @@ const Contact = () => {
             <a href='https://www.linkedin.com/in/adarsh-pv-070696215/'>
               <Image 
                 className='w-10' 
-                src="/Images/linkedin-icon.png" 
+                src="/images/linkedin-icon.png" 
                 width={30} 
                 height={30} 
                 alt="LinkedIn"
@@ -29,7 +29,7 @@ const Contact = () => {
             <a href='https://github.com/adarsh-pv'>
               <Image 
                 className='w-12 ml-2' 
-                src="/Images/github-icon.ico" 
+                src="/images/github-icon.ico" 
                 width={40} 
                 height={40} 
                 alt="GitHub"
@@ -39,7 +39,7 @@ const Contact = () => {
             <a href='https://medium.com/@adarshharindran'>
               <Image 
                 className='w-11 ml-2' 
-                src="/Images/medium-icon.webp" 
+                src="/images/medium-icon.webp" 
                 width={40} 
                 height={40} 
                 alt="Medium"
