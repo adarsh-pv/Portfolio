@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  /* --foreground: #171717; */
+  --background: #1a1a1a; /* Background color */
+  --foreground: #ffffff; /* White text color */
 }
 
 @layer utilities {
@@ -22,8 +22,8 @@ html {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--foreground); /* Set text color to white */
+  background: var(--background); /* Set background */
 }
 
 .Container {
@@ -51,14 +51,11 @@ body {
   position: fixed;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
-  /* padding: 2px;  */
   display: flex;
   flex-direction: column; 
   justify-content: flex-start; 
   overflow: hidden;
 }
-
-
 
 .Footer {
   position: absolute;
@@ -70,13 +67,11 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --background: #0a0a0a; */
-    --foreground: #ededed;
-  }
+/* Ensure all text is white */
+body,
+.Content,
+.Box {
+  color: var(--foreground); /* Always white text */
 }
 
 @layer utilities {
