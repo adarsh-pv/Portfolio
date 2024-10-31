@@ -14,8 +14,9 @@ const config: Config = {
       'md': '740px',
       // => @media (min-width: 960px) { ... }
 
-      'lg': '1022px',
+      'lg': '1024px',
       // => @media (min-width: 1440px) { ... }
+      'xl': '1100px',
     },
     extend: {
       colors: {
