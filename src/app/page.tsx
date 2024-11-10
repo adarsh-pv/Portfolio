@@ -3,7 +3,7 @@ import React from "react";
 const HomePage = () => {
   return (
     <div className="flex justify-center items-center px-4 text-center">
-      <div className="lg:mt-36 md:mt-72 ssm:mt-12">
+      <div className="lg:mt-36 md:mt-72 sm:mt-40">
         {" "}
         {/* Ensures the content is centered and responsive */}
         <h1 className="text-2xl sm:text-4x2 md:text-clip font-bold mb-4">
