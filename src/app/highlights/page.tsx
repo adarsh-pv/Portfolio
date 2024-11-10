@@ -44,7 +44,7 @@ export default function HighlightsPage() {
             backgroundImage: "linear-gradient(135deg, #000000, #4b2e2e)"
           }}
         >
-          <span>// experience & skills</span>
+          <span> experience & skills </span>
         </h1>
         
         <div className="pt-16 grid gap-6 relative">

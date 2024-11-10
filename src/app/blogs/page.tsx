@@ -48,7 +48,7 @@ const Page = () => {
             backgroundImage: "linear-gradient(135deg, #000000, #4b2e2e)"
           }}
         >
-          <span>// articles & blogs</span>
+          <span> articles & blogs </span>
         </h1>
         <div className="pt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
           {blogs.map((blog, index) => (
