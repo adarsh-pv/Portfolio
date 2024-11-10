@@ -10,8 +10,8 @@ const HomePage = () => {
           Hi, I&#39;m Adarsh👋🏼!
         </h1>
         <p className="text-lg mb-4 text-start">
-        I’m a web developer with a passion for learning and solving challenges through code. I enjoy bringing creative ideas to life and am always open to new opportunities and collaborations.
-If you’d like to connect or explore my work, feel free to reach out—let’s create something awesome together!😊<br />
+          Self-taught web developer, love to learn new things and I&#39;m always
+          looking for new challenges to solve 😊<br />
           <a href="/contact" className="underline">connect now!</a>
         </p>
         {/* <p className="text-lg mb-4 text-start">
