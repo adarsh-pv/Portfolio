@@ -18,14 +18,14 @@ const blogs = [
     link: "https://medium.com/@adarshharindran/how-to-create-a-simple-npm-package-with-utility-functions-6e097e8cfd18",
   },
   {
-    title: "Rich Dad Poor Dad: Insights to Transform Your Financial Mindset",
+    title: "Understanding HTML Attributes vs. DOM Properties: Key Differences and Why They Matter",
     summary:
-      "Explore key insights on how the rich manage their money differently than the poor and middle class.",
-    date: "Oct 30, 2024",
-    link: "https://medium.com/@adarshharindran/rich-dad-poor-dad-insights-to-transform-your-financial-mindset-a7c565a1dea2",
+      "Learn the differences between HTML attributes and DOM properties, how they interact, and how to use them effectively in your web projects.",
+    date: "Nov 08, 2024",
+    link: "https://medium.com/@adarshharindran/understanding-html-attributes-vs-dom-properties-key-differences-and-why-they-matter-c06a1860ba20",
   },
   {
-    title: "Discover the Latest Innovations on Medium",
+    title: "Discover the Latest Innovations blog",
     summary:
       "Dive into a world of innovation, creativity, and tech insights. Visit my Medium profile to learn, grow, and keep coding with cutting-edge ideas and tutorials!",
     date: "",
@@ -40,10 +40,13 @@ const Page = () => {
     <div className="min-h-screen flex flex-col justify-between xl:ml-16">
       <div
         className="max-w-5xl relative overflow-y-auto"
-        style={{ height: "calc(100vh - 180px)", scrollbarWidth: "none" }}
+        style={{ height: "calc(100vh - 190px)", scrollbarWidth: "none" }}
       >
-
-        <div className="pt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+         <h1 className="fixed font-bold z-10 bg-amber-800"
+          style={{
+            backgroundImage: "linear-gradient(135deg, #000000, #4b2e2e)"
+          }}> <span>// articles & blogs</span> </h1> 
+        <div className="pt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
           {blogs.map((blog, index) => (
             <BlogCard
               key={index}

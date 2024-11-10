@@ -24,7 +24,7 @@ const Template = ({ children }) => {
   <div className="flex justify-start max-w-md w-full text-center">
     <a href="/" className="hover:underline border-r border-white px-2 max-w-md w-full">home</a>
     <a href="/blogs" className="hover:underline border-r border-white px-2 max-w-md w-full">blogs</a>
-    <a href="/projects" className="hover:underline border-r border-white px-2 max-w-md w-full">projects</a>
+    <a href="/highlights" className="hover:underline border-r border-white px-2 max-w-md w-full">experience</a>
     <a href="/contact" className="hover:underline px-2 max-w-md w-full max-w-md w-full">contact</a>
   </div>
 </footer>

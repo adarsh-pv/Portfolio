@@ -3,7 +3,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen text-start text-center  lg:px-44">
+    <div className="flex flex-col justify-center items-center min-h-screen text-start text-center  lg:px-32">
       <div className="lg:mb-48 md:mb-52 sm:mb-40 mb-32"> {/* Added max-width and w-full for responsiveness */}
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Let’s Get in Touch</h1>
         <p className="text-sm md:text-lg">
