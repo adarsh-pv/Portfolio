@@ -42,10 +42,14 @@ const Page = () => {
         className="max-w-5xl relative overflow-y-auto"
         style={{ height: "calc(100vh - 190px)", scrollbarWidth: "none" }}
       >
-         <h1 className="fixed font-bold z-10 bg-amber-800"
+         <h1
+          className="fixed font-bold z-10 bg-amber-800 px-4 py-2 rounded"
           style={{
             backgroundImage: "linear-gradient(135deg, #000000, #4b2e2e)"
-          }}> <span>// articles & blogs</span> </h1> 
+          }}
+        >
+          <span>// articles & blogs</span>
+        </h1>
         <div className="pt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
           {blogs.map((blog, index) => (
             <BlogCard
