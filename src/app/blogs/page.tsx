@@ -16,29 +16,35 @@ const Page = () => {
         const response = await axios.get(
           "https://api.allorigins.win/get?url=https://medium.com/feed/@adarshharindran"
         );
-
+  
         const parser = new xml2js.Parser();
-        parser.parseString(response.data.contents, (err, result) => {
-          if (err) {
-            console.error("Error parsing XML:", err);
-            return;
+        parser.parseString(
+          response.data.contents,
+          (err: Error | null, result: any) => {
+            if (err) {
+              console.error("Error parsing XML:", err);
+              return;
+            }
+  
+            const items = result.rss.channel[0].item;
+            const blogData = items.map((item: any) => ({
+              title: item.title[0],
+              link: item.link[0],
+              pubDate: item.pubDate[0],
+              summary: item.description
+                ? item.description[0].replace(/(<([^>]+)>)/gi, "").substring(0, 150) + "..."
+                : "No summary available",
+            }));
+            setBlogData(blogData);
           }
-
-          const items = result.rss.channel[0].item;
-          const blogData = items.map((item) => ({
-            title: item.title[0],
-            link: item.link[0],
-            pubDate: item.pubDate[0],
-          }));
-          setBlogData(blogData);
-        });
+        );
       } catch (error) {
         console.error("Error fetching blogs:", error);
       } finally {
         setLoading(false);
       }
     };
-
+  
     getBlogs();
   }, []);
 
