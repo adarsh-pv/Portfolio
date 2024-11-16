@@ -6,7 +6,7 @@ import xml2js from "xml2js";
 import { BounceLoader } from "react-spinners";
 
 const Page = () => {
-  const [blogData, setBlogData] = useState([]);
+  const [blogData, setBlogData] = useState<BlogItem[]>([]);;
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -20,14 +20,14 @@ const Page = () => {
         const parser = new xml2js.Parser();
         parser.parseString(
           response.data.contents,
-          (err: Error | null, result: any) => {
+          (err: Error | null, result: RSSResult) => {
             if (err) {
               console.error("Error parsing XML:", err);
               return;
             }
   
             const items = result.rss.channel[0].item;
-            const blogData = items.map((item: any) => ({
+            const blogData = items.map((item) => ({
               title: item.title[0],
               link: item.link[0],
               pubDate: item.pubDate[0],
