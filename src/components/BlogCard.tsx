@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 interface BlogCardProps {
   title: string;
-  summary: string;
+  summary: string | undefined;
   date: string;
   link?: string; // Make link optional
 }

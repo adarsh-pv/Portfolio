@@ -72,7 +72,7 @@ const Page = () => {
               <BlogCard
                 key={index}
                 title={blog?.title}
-                summary={blog?.summary}
+                summary={blog?.description}
                 date={blog.pubDate}
                 link={blog.link}
               />
